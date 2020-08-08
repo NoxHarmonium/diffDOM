@@ -21,7 +21,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/fiduswriter/diffDOM.git"
+        "url": "git://github.com/noxharmonium/diffDOM.git"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "author": "Johannes Wilm mail@johanneswilm.org",
     "maintainers": [
@@ -32,9 +35,9 @@
     ],
     "license": "LGPL-3.0",
     "bugs": {
-        "url": "https://github.com/fiduswriter/diffDOM/issues"
+        "url": "https://github.com/noxharmonium/diffDOM/issues"
     },
-    "homepage": "https://github.com/fiduswriter/diffDOM",
+    "homepage": "https://github.com/noxharmonium/diffDOM",
     "keywords": [
         "diff",
         "dom"
