@@ -1,23 +1,28 @@
-import buble from 'rollup-plugin-buble'
-import { terser } from 'rollup-plugin-terser'
+import babel from 'rollup-plugin-babel';
+import { terser } from 'rollup-plugin-terser';
 
 export default {
     input: 'src/index.js',
     output: [
         {
-            file: 'dist/index.js',
-            format: 'cjs',
-            sourcemap: true
+            file: 'dist/diff-dom-es.js',
+            format: 'es'
         },
         {
-            file: 'browser/diffDOM.js',
-            format: 'iife',
-            name: 'diffDOM',
-            sourcemap: true
+            file: 'dist/diff-dom.js',
+            format: 'cjs'
         },
+        {
+            file: 'dist/diff-dom-browser.js',
+            format: 'umd',
+            name: 'diffDOM',
+            sourcemap: true,
+            plugins: [terser()]
+        }
     ],
     plugins: [
-        buble(),
-        terser()
+        babel({
+            exclude: 'node_modules/**'
+        })
     ]
 }

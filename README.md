@@ -6,6 +6,14 @@ that must be applied to one element in order to turn it into the other
 element. This diff is non-destructive, meaning that relocations of
 DOM nodes are preferred over remove-insert operations.
 
+## Note
+
+This project is a fork of https://github.com/fiduswriter/diffDOM to update some dependencies
+with vulnerabilities and publish an updated version since the original repo hasn't had any
+updates since Oct 2019.
+
+If the original project releases a new version I will remove/merge in this fork.
+
 ## License
 
 This project is licensed under the LGPL v. 3. For details see LICENSE.txt.
