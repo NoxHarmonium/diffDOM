@@ -12,7 +12,17 @@ This project is a fork of https://github.com/fiduswriter/diffDOM to update some 
 with vulnerabilities and publish an updated version since the original repo hasn't had any
 updates since Oct 2019.
 
+*All credit for writing the actual code should go to the original author Johannes Wilm.*
+
 If the original project releases a new version I will remove/merge in this fork.
+
+Install using the forked prefix:
+
+```
+$ npm install --save @noxharmonium/diff-dom
+```
+
+Or you can download a bundle for the browser from the [Github releases](https://github.com/NoxHarmonium/diffDOM/releases)
 
 ## License
 
